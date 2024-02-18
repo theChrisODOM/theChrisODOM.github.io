@@ -8,6 +8,10 @@ import JavaChessEngine from './components/portfolio/JavaChessEngine';
 import Resume from './components/resume/Resume';
 import CollegeDepartmentScheduler from './components/portfolio/CollegeDepartmentScheduler';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { Container } from '@mui/material';
+import { Footer } from 'antd/es/layout/layout';
+import Card from '@mui/material/Card';
+import Box from '@mui/material/Box';
 
 const darkTheme = createTheme({
   palette: {
@@ -19,15 +23,28 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider theme={darkTheme}>
-        <CsodomNavbar />
-        <Routes>
-          <Route path="/alphacraft" element={<Alphacraft />} />
-          <Route path="/collegedepartmentscheduler" element={<CollegeDepartmentScheduler />} />
-          <Route path="/javachessengine" element={<JavaChessEngine />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/" element={<Home />} />
-          <Route path="*" element={<Missing />} />
-        </Routes>
+        <Container maxWidth="lg" className="AppContainer">
+          <Box>
+            <CsodomNavbar />
+            <Routes>
+              <Route path="/alphacraft" element={<Alphacraft />} />
+              <Route path="/collegedepartmentscheduler" element={<CollegeDepartmentScheduler />} />
+              <Route path="/javachessengine" element={<JavaChessEngine />} />
+              <Route path="/resume" element={<Resume />} />
+              <Route path="/" element={<Home />} />
+              <Route path="*" element={<Missing />} />
+            </Routes>
+          </Box>
+        </Container>
+        <Container maxWidth="lg" className="AppFooter">
+          <Footer className="AppFooter-content">
+            <p>
+              <Card className="AppFooterCard"variant="outlined">
+                Hello World | hireme.csodom.com | Last Updated 2/17/2024
+              </Card>
+            </p>
+          </Footer>
+        </Container>
       </ThemeProvider>
     </div>
   );

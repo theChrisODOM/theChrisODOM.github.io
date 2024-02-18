@@ -1,4 +1,49 @@
 .App {
+  background-color: #1c1d1f;
+  min-height: 100vh;
+}
+
+.AppContainer {
+  min-height: 86vh;
+  background-color: #161616;
+}
+
+.Theme {
+  background-color: #161616;
+  color: white;
+  font-size: calc(6px + 1vmin);
+}
+
+.AppFooter {
+  background-color: #161616;
+  color: white;
+  bottom: 0;
+  position: sticky;
+  /* Center horizontally*/
+  text-align: center;
+}
+
+.AppFooter-content {
+  background-color: #161616;
+  z-index: 999;
+}
+
+.InfoCard {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.InfoCardCenter {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.AppFooterCard {
+  padding: 1rem;
 }
 
 .App-logo {
@@ -8,24 +53,44 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 60s linear;
+    animation: App-logo-spin infinite 900s linear;
   }
 }
 
 .CsodomNavbar {
-  background-color: #21242b;
+  background-color: #161616;
   color: white;
+  top: 0;
+  position: sticky;
+  z-index: 999;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #161616;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* Center horizontally*/
+  text-align: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.Alphacraft-header {
+  background-image: url("/public/alpha1.png");
+  background-position: center;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center horizontally*/
+  text-align: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin-top: 1rem;
 }
 
 .App-link {
