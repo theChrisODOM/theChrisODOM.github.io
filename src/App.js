@@ -1,6 +1,7 @@
 import './App.css';
 import Home from './components/home/Home'
 import CsodomNavbar from './components/CsodomNavbar';
+import Missing from './components/Missing';
 import { Route, Routes } from 'react-router-dom';
 import Alphacraft from './components/portfolio/Alphacraft';
 import JavaChessEngine from './components/portfolio/JavaChessEngine';
@@ -25,6 +26,7 @@ function App() {
           <Route path="/javachessengine" element={<JavaChessEngine />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/" element={<Home />} />
+          <Route path="*" element={<Missing />} />
         </Routes>
       </ThemeProvider>
     </div>

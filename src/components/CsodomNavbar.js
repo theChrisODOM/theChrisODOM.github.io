@@ -28,7 +28,7 @@ export const CsodomNavbar = () => {
                     <p >CSODOM.com</p>
                     <Button
                         id="basic-button"
-                        href={"/"}
+                        href={"/#/"}
                         onClick={() => {}}
                     >
                         Home
