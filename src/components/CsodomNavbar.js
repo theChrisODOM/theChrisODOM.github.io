@@ -51,13 +51,13 @@ export const CsodomNavbar = () => {
                         'aria-labelledby': 'basic-button',
                         }}
                     >
-                        <MenuItem onClick={() => {window.location = "/alphacraft"}}>Alphacraft</MenuItem>
-                        <MenuItem onClick={() => {window.location = "/collegedepartmentscheduler"}}>College Department Scheduler</MenuItem>
-                        <MenuItem onClick={() => {window.location = "/javachessengine"}}>Java Chess Engine</MenuItem>
+                        <MenuItem onClick={() => {window.location = "/#/alphacraft"}}>Alphacraft</MenuItem>
+                        <MenuItem onClick={() => {window.location = "/#/collegedepartmentscheduler"}}>College Department Scheduler</MenuItem>
+                        <MenuItem onClick={() => {window.location = "/#/javachessengine"}}>Java Chess Engine</MenuItem>
                     </Menu>
                     <Button
                         id="basic-button"
-                        href={"/resume"}
+                        href={"/#/resume"}
                         onClick={() => {}}
                     >
                         Resume

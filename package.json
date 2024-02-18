@@ -1,7 +1,7 @@
 {
   "name": "PersonalWebsiteCsodom",
   "version": "0.1.0",
-  "homepage": "https://thechrisodom.github.io/",
+  "homepage": "https://hireme.csodom.com/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.3",
