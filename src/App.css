@@ -35,6 +35,12 @@
   margin-bottom: 1rem;
 }
 
+.TitleCard {
+  padding-top: -4crem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .InfoCardCenter {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -81,6 +87,85 @@
 .Alphacraft-header {
   background-image: url("/public/alpha1.png");
   background-position: center;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center horizontally*/
+  text-align: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin-top: 1rem;
+}
+
+.CDS-header {
+  background-image: url("/public/stock_books.jpeg");
+  background-position: center;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center horizontally*/
+  text-align: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin-top: 1rem;
+}
+
+.JavaChess-header {
+  background-image: url("/public/chess1.jpeg");
+  background-position: center;
+  background-size: cover;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center horizontally*/
+  text-align: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin-top: 1rem;
+}
+
+.UAH-header {
+  background-image: url("/public/uah1.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center horizontally*/
+  text-align: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin-top: 1rem;
+}
+
+.SAIC-header {
+  background-image: url("/public/saic1.png");
+  background-position: right;
+  background-size: cover;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center horizontally*/
+  text-align: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin-top: 1rem;
+}
+
+.Amazon-header {
+  background-color: black;
+  background-size: contain;
+  background-repeat: no-repeat;
   min-height: 40vh;
   display: flex;
   flex-direction: column;

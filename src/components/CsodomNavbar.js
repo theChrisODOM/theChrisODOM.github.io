@@ -58,22 +58,24 @@ export const CsodomNavbar = () => {
                                 id="basic-menu"
                                 anchorEl={anchorElPortfolio}
                                 open={openPortfolio}
-                                onClose={handleClose}
+                                onClose={handleClose} 
                                 MenuListProps={{
                                 'aria-labelledby': 'basic-button',
                                 }}
                             >
+                                <MenuItem onClick={() => {window.location = "/#/resume"; setAnchorElPortfolio(null);}}>Resume</MenuItem>
+                                <MenuItem>Certifications</MenuItem>
+                                <Divider />
+                                <MenuItem disabled>Professional History</MenuItem>
+                                <MenuItem onClick={() => {window.location = "/#/uahbscs"; setAnchorElPortfolio(null);}}>Bachelor's of Science</MenuItem>
+                                <MenuItem onClick={() => {window.location = "/#/saic"; setAnchorElPortfolio(null);}}>SAIC</MenuItem>
+                                <MenuItem onClick={() => {window.location = "/#/amazon"; setAnchorElPortfolio(null);}}>Amazon.com</MenuItem>
+                                <Divider />
+                                <MenuItem disabled>Personal/School Projects</MenuItem>
                                 <MenuItem onClick={() => {window.location = "/#/alphacraft"; setAnchorElPortfolio(null);}}>Alphacraft</MenuItem>
                                 <MenuItem onClick={() => {window.location = "/#/collegedepartmentscheduler"; setAnchorElPortfolio(null);}}>College Department Scheduler</MenuItem>
                                 <MenuItem onClick={() => {window.location = "/#/javachessengine"; setAnchorElPortfolio(null);}}>Java Chess Engine</MenuItem>
                             </Menu>
-                            <Button
-                                id="basic-button"
-                                href={"/#/resume"}
-                                onClick={() => {}}
-                            >
-                                Resume
-                            </Button>
                         </Space>
                         <Space>  
                             <Button
@@ -132,12 +134,18 @@ export const CsodomNavbar = () => {
                             >
                                 <MenuItem onClick={() => {window.location = "/#"; setAnchorElMobileMenu(null);}}>Home</MenuItem>
                                 <Divider />
-                                <MenuItem disabled>Portfolio</MenuItem>
+                                <MenuItem onClick={() => {window.location = "/#/resume"; setAnchorElMobileMenu(null);}}>Resume</MenuItem>
+                                <MenuItem>Certifications</MenuItem>
+                                <Divider />
+                                <MenuItem disabled>Professional History</MenuItem>
+                                <MenuItem onClick={() => {window.location = "/#/uahbscs"; setAnchorElMobileMenu(null);}}>Bachelor's of Science</MenuItem>
+                                <MenuItem onClick={() => {window.location = "/#/saic"; setAnchorElMobileMenu(null);}}>SAIC</MenuItem>
+                                <MenuItem onClick={() => {window.location = "/#/amazon"; setAnchorElMobileMenu(null);}}>Amazon.com</MenuItem>
+                                <Divider />
+                                <MenuItem disabled>Personal/School Projects</MenuItem>
                                 <MenuItem onClick={() => {window.location = "/#/alphacraft"; setAnchorElMobileMenu(null);}}>Alphacraft</MenuItem>
                                 <MenuItem onClick={() => {window.location = "/#/collegedepartmentscheduler"; setAnchorElMobileMenu(null);}}>College Department Scheduler</MenuItem>
                                 <MenuItem onClick={() => {window.location = "/#/javachessengine"; setAnchorElMobileMenu(null);}}>Java Chess Engine</MenuItem>
-                                <Divider />
-                                <MenuItem onClick={() => {window.location = "/#/resume"; setAnchorElMobileMenu(null);}}>Resume</MenuItem>
                                 <Divider />
                                 <MenuItem disabled>Socials</MenuItem>  
                                 <MenuItem onClick={() => {window.location = "https://www.linkedin.com/in/csodom/"}}>Linkedin</MenuItem>

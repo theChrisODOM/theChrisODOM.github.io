@@ -7,10 +7,10 @@ class Home extends React.Component {
             <div>
                 <header className="App-header">
                     <img src={"/profile.png"} className="App-logo" alt="my face" />
-                    <h1>CSODOM's Personal Portfolio. </h1>
-                    <h4> 
+                    <h2>CSODOM's Personal Portfolio. </h2>
+                    <p> 
                         On this website, there will be information about CSODOM's projects and other work history.
-                    </h4>
+                    </p>
                 </header>
             </div>
         )

@@ -12,6 +12,7 @@ class Alphacraft extends React.Component {
             <Box className="Theme">
                 <header className="Alphacraft-header">
                     <h1>Alphacraft</h1>
+                    <h4>A Minecraft 1.16 Mod made with Java and Forge</h4>
                 </header>
                 <Space direction="vertical" size="large" style={{ display: 'flex' }}>
                     <Flex vertical align='center'>
